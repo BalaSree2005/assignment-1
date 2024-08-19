@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assetes/css/styles.css">
+   
+    <style>
+#box-3{
+    width: 200px;
+    height: 200px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:large;
+    font-weight: bold;
+    /* position: absolute -- align items anywhere in the page(non static) aligns/moves from its non static parent position */
+    position: absolute;
+    left: 150px;
+    bottom: 20px;
+    padding: 5px;
+    /* z-index:from static position we can change the oreder that it executes default all have 0, top layer (+ve value),underneath (-ve value)*/
+    z-index: 1;
+}
+
+#box-4 {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:large;
+    font-weight: bold;
+    position: absolute;
+    bottom: 20px;
+    right: 500px;
+
+}
+
+     /* #wel {
+        font-weight: bolder;
+        font-size:x-large;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }  
+      */
+      #box-6 {
+    font-weight: bolder;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    bottom: 120px;
+    right: 57%;
+    z-index: 10000;
+    position: relative;
+    /* background-color: antiquewhite; */
+    text-align: justify;
+    white-space: nowrap;
+}
+
+    
+  
+  button:hover {
+    background-color: #555;
+  }
+        
+        /* a:hover {
+    background-color: #3a217e;
+  } */
+
+  img {
+    display: flex;
+    align-items:center;
+    justify-content:space-around;
+    height: 120vh;
+    width: 151vw;
+    z-index: 0;
+    opacity: 0.2;
+    top: 0;
+    bottom: 0;
+    /* left: 50%; */
+    /* position: relative; */
+
+  }
+    </style>
+</head>
+<body>
+
+    
+
+    <header id="nav-bar">
+        
+        <nav >
+            <a href="./index1.html">Home</a>
+            <a href="./register.html">Register</a>
+            <a href="./login.html">Login</a>
+            <a href="./dashboard.html">Dashboard</a>
+            <a href="./aboutus.html">About Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <img src="./wallpaper.jpg" alt="">
+    <section id="wel">
+        
+    </section>
+    <section id="box-3">
+    <button onclick="window.location.href='login.html'">Login</button>
+</section>
+ <section id="box-4">
+    <button onclick="window.location.href='register.html'">Register</button>
+</section>
+
+<section id="box-6">
+    <h1 >Welcome to the world of programing..!</h1>
+        </section>
+
+    </main>
+
+    <footer>
+<section>
+    All rights reserved...!
+</section>
+
+    </footer>
+    
+</body>
+</html>

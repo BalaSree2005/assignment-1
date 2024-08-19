@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assetes/css/styles.css">
+</head>
+<style>
+  form {
+    width: 100%; 
+    border-collapse: collapse;
+    margin: 20px 0;
+    border: 1px solid rgb(20, 123, 151);
+    padding: px;
+    border-width: 10px 5px;
+    border-radius: 15px 25px;
+    box-shadow: 10px 10px 13px 10px rgb(143, 203, 204);
+    
+    height: 50vh; 
+    width: 50vw;  
+}
+
+</style>
+<body>
+  <header id="nav-bar">
+        
+    <nav >
+        <a href="./index1.html">Home</a>
+        <a href="./register.html">Register</a>
+        <a href="./login.html">Login</a>
+        <a href="./dashboard.html">Dashboard</a>
+        <a href="./aboutus.html">About Us</a>
+    </nav>
+</header>
+    
+    <main>
+        <form action="login_process.php" method="post">
+          <label for="username" style="font-weight: lighter;">Username:</label>
+          <input type="text" id="username" name="username" required>
+          <label for="password" style="font-weight: lighter;">Password:</label>
+          <input type="password" id="password" name="password" required> <br> <br>
+          <button type="submit">Login</button>
+        </form>
+      </main>
+
+      <footer>
+        <section>
+            All rights reserved...!
+        </section>
+        
+            </footer>
+            
+</body>
+</html>

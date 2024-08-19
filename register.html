@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assetes/css/styles.css">
+<style>
+
+    
+
+    #sub
+    {
+        display: flex;
+        justify-content: space-around;
+        
+        width: 20%;
+        
+    }
+
+    #re {
+        display: flex;
+        justify-content: space-around;
+        width: 20%;
+    }
+
+   /* #form {
+        box-shadow: 50px 10px rgb(207, 240, 136);
+    } */
+
+    button {
+    width: 100%;
+    padding: 14px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+
+  form {
+    height: 100vh;
+    
+  }
+
+  /* #box-5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    font-weight: bold;
+    position: absolute;
+    top: 0vh;
+    left: 200px;
+    width: 80%; 
+    height: 15%; 
+    padding: 1px 0px;
+    background-color: aliceblue;
+
+} */
+
+/* #re {
+    position: absolute;
+  right: 30%;
+  bottom:-12%;
+  width: ;
+
+
+
+}
+
+.button-large { 
+            font-size: 110%; 
+        }  */
+
+        .button-container {
+            display: flex;
+            justify-content: center; /* Center the buttons horizontally */
+            gap: 150px; /* Add space between the buttons */ 
+           align-items:center;
+           position: relative;
+           bottom: -25px;
+        }
+
+        .block {
+            width: auto; /* Allow the buttons to take their natural width */
+            border: none;
+            background-color: #284562;
+            color: white;
+            padding: 14px 28px;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+            position: relative;
+            
+        
+        }
+
+.block:hover {
+  background-color: #ddd;
+  color: black;
+}
+.container {
+    position: relative;
+    bottom: 25px;
+    font-size:large;
+}
+
+</style>
+
+</head>
+<body>
+    <header id="nav-bar">
+        
+        <nav >
+            <a href="./index1.html">Home</a>
+            <a href="./register.html">Register</a>
+            <a href="./login.html">Login</a>
+            <a href="./dashboard.html">Dashboard</a>
+            <a href="./aboutus.html">About Us</a>
+        </nav>
+    </header>
+    <main>
+    <div class="container" id="form">
+        <form action="success.html" method="get" submit="">
+    
+            <fieldset>
+                <legend>
+Educational Details
+                </legend>
+                <div class="form-group">
+                    <label for="college">College Name:</label>
+                    <input type="text" name="college" id="college"  value="" >
+                </div>
+                    <div class="form-group">
+                        <label for="name">Degree</label>
+                        <input type="text" name="name" id="name" >
+                        
+                        <!-- <label for="add">Address:</label> -->
+                        <!-- <textarea rows="4" col="100" placeholder="Address" style="width:400px" style="height:500px"></textarea> -->
+    
+    
+                    </div>
+
+                    <div class="form-group">
+                        <label for="year">Year of Passing:</label>
+                        <input type="number" name="year" id="year"  value="" >
+                    </div>
+                    <div>
+                    <label>Branch</label>
+                    <select id="branch" name="branch">
+                        <option value="CSE">CSE</option>
+                        <option value="IT">IT</option>
+                        <option value="ECE">ECE</option>
+                        <option value="Others">Others</option>
+                    </select>
+
+                  </div> 
+                    
+
+            </fieldset>
+
+            
+            <!-- <fieldset>
+                <legend>
+                    <h1>Personal Details: </h1>
+                    <input type="radio" id="gender" name="" value="Female" style="flex-direction: row;">
+                    <label for="gender">Female</label><br>
+                    <input type="radio" id="gender" name="" value="Male" style=" flex-direction: row;">
+                    <label for="gender">Male</label><br>
+                    <label for="country">Country:</label>
+                    <select id="country" name="country">
+                        <option value="usa">USA</option>
+                        <option value="canada">CANADA</option>
+                        <option value="india">INDIA</option>
+                        <option value="australia">AUSTRALIA</option>
+                    </select>
+        
+       
+               </legend>
+            </fieldset> -->
+            <fieldset>
+                <legend>Personal Details</legend>
+                <label>Hobbies:</label>
+        <label class="inline" for="java"><input type="checkbox" id="java" name="skills" value="Java"> Reading</label>
+        <label class="inline" for="python"><input type="checkbox" id="python" name="skills" value="Python"> Painting</label>
+        <label class="inline" for="html"><input type="checkbox" id="html" name="skills" value="HTML">Cooking</label>
+        <label class="inline" for="css"><input type="checkbox" id="css" name="skills" value="CSS">Dancing</label>
+       
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="phone">Phone No:</label>
+        <input type="tel" id="phone" name="phone" required>
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required>
+               
+            </fieldset>
+            
+                 <div class="button-container">
+                <button type="submit" id="sub" class="block">Register</button>
+                <br>
+                <!-- <section id="box-5"> -->
+                <button type="reset" id="re" class="block" style="background-color: rgba(41, 43, 43, 0.649);">Reset</button>
+            </div>
+            
+            <!-- </section> -->
+              
+            <!-- <fieldset>
+                <legend>
+                    <h1>type 5: </h1>
+                    <label for="color">Color:</label>
+            <input type="color" id="color" name="color"><br><br>
+    
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date"><br><br>
+    
+            <label for="datetime-local">Date and Time:</label>
+            <input type="datetime-local" id="datetime-local" name="datetime-local"><br><br>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+    
+            <label for="file">File:</label>
+            <input type="file" id="file" name="file"><br><br>
+    
+            <-- Hidden input does not display in the form -->
+            <!-- <input type="hidden" id="hidden" name="hidden" value="hiddenValue">
+    
+            <label for="image">Image</label>
+            <input type="image" id="image" name="image" src="./images/pexels-anjana-c-169994-674010.jpg" alt="Submit" width="100px" height="100px"><br><br>
+    
+            <label for="month">Month:</label>
+            <input type="month" id="month" name="month"><br><br>
+    
+            <label for="number">Number:</label>
+            <input type="number" id="number" name="number"><br><br>
+    
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"><br><br>
+    
+            
+    
+            <label for="range">Range:</label>
+            <input type="range" id="range" name="range" min="0" max="10"><br><br>
+    
+            <label for="reset">Reset:</label>
+            <input type="reset" value="Reset"><br><br>
+    
+            <label for="search">Search:</label>
+            <input type="search" id="search" name="search"><br><br>
+    
+            <label for="tel">Telephone:</label>
+            <input type="tel" id="tel" name="tel"><br><br>
+    
+    
+    
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time"><br><br>
+    
+            <label for="url">URL:</label>
+            <input type="url" id="url" name="url"><br><br>
+    
+            <label for="week">Week:</label>
+            <input type="week" id="week" name="week"><br><br>
+            
+                    
+               </legend>
+            </fieldset> -->
+            
+            
+        
+        </form>
+
+    </main>
+
+    <footer>
+        <section>
+            All rights reserved...!
+        </section>
+        
+            </footer>
+            
+
+
+
+    
+</body>
+</html>

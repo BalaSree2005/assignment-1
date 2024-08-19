@@ -1,0 +1,206 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+header{
+
+
+    /* background-color: black; */
+    
+    display: flex;
+    
+    align-items: center;
+    font-size:large;
+    
+}
+
+#nav-bar {
+    background-color: rgb(32, 15, 68);
+    /* color: rgb(33, 24, 79); */
+      padding: 8px;
+    
+      position: sticky;
+      top: 0px;
+      width: 100%;
+      z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}
+
+nav a {
+    
+    text-decoration: none;
+     /* background-color: rgba(43, 41, 41, 0.949); */
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+
+}
+
+
+
+
+a:hover {
+    background-color: #6a833e;
+  }
+
+
+main{
+    
+    background-color: rgb(223, 241, 244);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    font-weight: bolder;
+    height: 120vh;
+}
+
+
+#about {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* nav a{
+    box-shadow: 3px solid rgb(248, 239, 239);
+}
+
+ body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: #333;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 14px 20px;
+    display: inline-block;
+  }
+  
+  nav ul li a:hover {
+    background-color: #111;
+  }
+  
+  header {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  main {
+    padding: 20px;
+  }
+   */
+  form {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  form fieldset {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  form legend {
+    padding: 0 10px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  form label.inline {
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: normal;
+  }
+  
+  form input,
+  form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  form input[type="radio"],
+  form input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+  }
+  
+  form input:focus,
+  form select:focus {
+    border-color: #66afe9;
+    outline: none;
+    box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+  }
+  
+  button {
+    width: 100%;
+    padding: 14px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #555;
+  } 
+
+
+  footer {
+    background-color: #150a36;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+  
